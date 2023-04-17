@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="pt-br" xml:lang="pt-br" xmlns:th="https://www.thymeleaf.org">
+    <head> 
+        <title>Calculadora Resultado</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    </head>
+    <body>
+        <h1>Resultado Calculadora</h1>
+        <p th:text="'Resultado: ' + ${frmCalculadora.getResultado}" />        
+        <p><a th:href="@{/}">Calculadora</a></p>         
+    </body>
+</html>

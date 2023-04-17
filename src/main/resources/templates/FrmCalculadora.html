@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br" xml:lang="pt-br" xmlns:th="https://www.thymeleaf.org">
+    <head>
+        <title>Formul&aacute;rio Calculadora</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    </head>
+    <body>
+        <h1>Formul&aacute;rio Calculadora</h1>                                                                 
+        <form action="#" th:action="@{/getResultado}" th:object="${frmCalculadora}"  method="post">                  
+            Valor A: <input type="text" th:field="*{valorA}" /><p>
+                Operação:    
+                <select th:field="*{operacao}">
+                    <option value="adicao">Adição</option>
+                    <option value="subtracao">Subtração</option>
+                    <option value="produto">Produto</option>
+                    <option value="divisao">Divisão</option>
+                </select><p>
+                Valor B: <input type="text" th:field="*{valorB}" /><p>
+                <input type="reset" value="Limpar">
+                <input type="submit" name="Calcular" value="Calcular"> <br>
+        </form>
+        <br>
+    </body>
+</html>
