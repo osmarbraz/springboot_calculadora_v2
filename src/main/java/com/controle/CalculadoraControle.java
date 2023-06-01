@@ -40,20 +40,20 @@ public class CalculadoraControle {
         //Verifica o tipo da operação
         double resultado = 0;
         if (frmCalculadora.getOperacao().equals("adicao")) {
-            resultado = calculadora.getAdicao();
+            resultado = calculadora.getSoma();
             System.out.println("A = " + frmCalculadora.getValorA() + " + B = " + frmCalculadora.getValorB() + " Resultado: " + resultado);
         } else {
             if (frmCalculadora.getOperacao().equals("subtracao")) {
-                resultado = calculadora.getSubtracao();
+                resultado = calculadora.getDiferenca();
                 System.out.println("A = " + frmCalculadora.getValorA() + " - B = " + frmCalculadora.getValorB() + " Resultado: " + resultado);
 
             } else {
-                if (frmCalculadora.getOperacao().equals("produto")) {
+                if (frmCalculadora.getOperacao().equals("multiplicacao")) {
                     resultado = calculadora.getProduto();
                     System.out.println("A = " + frmCalculadora.getValorA() + " * B = " + frmCalculadora.getValorB() + " Resultado: " + resultado);
                 } else {
                     if (frmCalculadora.getOperacao().equals("divisao")) {
-                        resultado = calculadora.getDivisao();
+                        resultado = calculadora.getQuociente();
                         System.out.println("A = " + frmCalculadora.getValorA() + " / B = " + frmCalculadora.getValorB() + " Resultado: " + resultado);
                     }
                 }
